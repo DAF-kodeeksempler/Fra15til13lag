@@ -131,7 +131,7 @@
     // Skærmkort layer [WMTS:topo_skaermkort]
     var skaermkortStatic = new ol.layer.Tile({
         opacity: 1.0,
-        title:'Skærmkort - Dynmaic',
+        title:'Skærmkort - Static',
         type:'base',
         visible: true, // by default this layer is visible
         source: wmtsSourceStatic // start with wmts source
