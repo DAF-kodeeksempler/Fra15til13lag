@@ -1,5 +1,5 @@
 # Ændring af mængden af lag på kortservices
-Den xxxx skifter 6 WMTS services på Datafordeleren over til 13 lags zoomdybde, i stedet for 15
+Den <span style="color:red">xxxxx</span> skifter 6 WMTS services på Datafordeleren over til 13 lags zoomdybde, i stedet for 15
 
 Følgende services skifter fra 15 til 13 lag:
 
@@ -20,7 +20,7 @@ Hvis du har opsat WMTS i din applikation, hvor alle zoomdybder bruges, skal du f
 I dette github repository ([https://github.com/DAF-kodeeksempler/Fra15til13lag](https://github.com/DAF-kodeeksempler/Fra15til13lag))
 findes eksempler for overleaf og openlayers.
 
-Omskrevede eksempler fra kortforsyningen findes her: ([https://github.com/DAF-kodeeksempler/Demo](https://github.com/DAF-kodeeksempler/Demo))
+Omskrevne eksempler fra kortforsyningen findes her: ([https://github.com/DAF-kodeeksempler/Demo](https://github.com/DAF-kodeeksempler/Demo))
 
 
 ### Overleaf
@@ -33,4 +33,4 @@ Se følgende [eksempel](/examples/overleaf/example_wms_zoom.html)
 
 <span style="text-decoration: underline">Kodeeksempel</span>
 
-Se følgende [eksempel](/examples/openlayer/example_wms_zoom.html)
+Se følgende [eksempel](/examples/openlayers/example_wms_zoom.html)
