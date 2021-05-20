@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        .map {
+          height: 800px;
+          width: 100%;
+        }
+        table, td, th {
+          border: 1px solid black;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        td {
+          text-align: center;
+          width: 50%;
+        }
+    </style>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.2/proj4-src.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js" type="text/javascript"></script>
+    <script src="lib/L.Map.Sync.js" type="text/javascript"></script>
+    <title>Leaflet Switch zoom</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>
+          <h2>Dynamic map</h2>
+          <p>Changes to wms after layer 13 zoom</p>
+        </th>
+        <th>
+          <h2>Static map</h2>
+          <p>Zooms down to layer 15.</p>
+          <p>This map will not work after the change</p>
+        </th>
+
+      </tr>
+      <tr>
+        <td><div id="mapDynamic" class="map"></div></td>
+        <td><div id="mapStatic" class="map"></div></td>
+
+      </tr>
+    </table>
+    <script src="example_wms_zoom.js" type="text/javascript"></script>
+  </body>
+</html>
