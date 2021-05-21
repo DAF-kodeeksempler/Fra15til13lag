@@ -1,5 +1,5 @@
-# Ændring af mængden af lag på kortservices
-Den <span style="color:red">xxxxx</span> skifter 6 WMTS services på Datafordeleren over til 13 lags zoomdybde, i stedet for 15
+# Ændring af mængden af zoom dybder på kortservices
+Den <span style="color:red">xxxxx</span> skifter 6 WMTS services på Datafordeleren over til 13 zoom dybder, i stedet for 15.
 
 Følgende services skifter fra 15 til 13 lag:
 
@@ -18,7 +18,7 @@ De inderste 2 lag tilføjer ikke mere information, og er opskalerede versioner a
 ## Hvordan påvirker det mig?
 Hvis du har opsat WMTS i din applikation, hvor alle zoomdybder bruges, skal du fjerne de inderste 2 dybder.
 
-Lagenes dimensioner: (Lig mærke til 14 og 15, som fjernes)
+Lagenes dimensioner: (Læg mærke til 14 og 15, som fjernes)
 
 
 | TileMatrix | MatrixHeight | MatrixWidth | PixelSize: meter/pixel | Bredde i meter for 256-tile |
@@ -42,17 +42,17 @@ Lagenes dimensioner: (Lig mærke til 14 og 15, som fjernes)
 
 ## Eksempler
 I dette github repository ([https://github.com/DAF-kodeeksempler/Fra15til13lag](https://github.com/DAF-kodeeksempler/Fra15til13lag))
-findes eksempler for overleaf og openlayers.
+findes eksempler for Leaflet og Openlayers.
 
 I de følgende eksempler vises hvordan det inderste zoomlag kan udskiftes med WMS services, i stedet for WMTS.
 
 Ekstra omskrevne eksempler fra kortforsyningen til Datafordeler findes her: ([https://github.com/DAF-kodeeksempler/Demo](https://github.com/DAF-kodeeksempler/Demo))
 
 
-### Overleaf
+### Leaflet
 
 
-<span style="text-decoration: underline">Kodeeksempel</span>: [eksempel](/examples/overleaf/example_wms_zoom.html)
+<span style="text-decoration: underline">Kodeeksempel</span>: [eksempel](/examples/leaflet/example_wms_zoom.html)
 
 ### Openlayers
 
