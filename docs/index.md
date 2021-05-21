@@ -43,7 +43,7 @@ Zoom niveauernes dimensioner: (Læg mærke til 14 og 15, som bliver fjernet)
 ## Løsningsmuligheder
 Skift til WMS services ved de inderste zoom niveauer.
 
-I dette github repository ([https://github.com/DAF-kodeeksempler/Fra15til13lag](https://github.com/DAF-kodeeksempler/Fra15til13lag))
+I dette github repository ([https://github.com/DAF-kodeeksempler/Fra15til13zoom](https://github.com/DAF-kodeeksempler/Fra15til13zoom))
 finder du eksempler for Leaflet og Openlayers, der viser hvordan de inderste zoom niveauer kan udskiftes med WMS services i stedet for WMTS.
 
 <span style="text-decoration: underline">Leaflet Kodeeksempel</span>: [eksempel](/examples/leaflet/example_wms_zoom.html)
