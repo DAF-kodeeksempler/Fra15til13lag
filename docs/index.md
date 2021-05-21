@@ -1,7 +1,7 @@
 # Ændring af mængden af zoom dybder på kortservices
 Den <span style="color:red">xxxxx</span> skifter 6 WMTS services på Datafordeleren over til 13 zoom dybder, i stedet for 15.
 
-Følgende services skifter fra 15 til 13 lag:
+Følgende services skifter fra 15 til 13 zoom dybder:
 
 * dhm_terraen_skyggekort
 * dhm_terraen_overflade
@@ -13,12 +13,12 @@ Følgende services skifter fra 15 til 13 lag:
 ## Hvorfor?
 <span style="color:red">Skal vi have det med?</span>
 
-De inderste 2 lag tilføjer ikke mere information, og er opskalerede versioner af lag 13. De fjernes derfor for at spare diskplads og tid når cachen opdateres.
+De inderste 2 zoom dybder tilføjer ikke mere information, og er opskalerede versioner af zoom dybde 13. De fjernes derfor for at spare diskplads og tid når cachen opdateres.
 
 ## Hvordan påvirker det mig?
 Hvis du har opsat WMTS i din webgis applikation, hvor alle zoom dybder bruges, skal du fjerne de inderste 2 dybder.
 
-Lagenes dimensioner: (Læg mærke til 14 og 15, som fjernes)
+Zoom dybdernes dimensioner: (Læg mærke til 14 og 15, som fjernes)
 
 
 | TileMatrix | MatrixHeight | MatrixWidth | PixelSize: meter/pixel | Bredde i meter for 256-tile |
@@ -44,7 +44,7 @@ Lagenes dimensioner: (Læg mærke til 14 og 15, som fjernes)
 I dette github repository ([https://github.com/DAF-kodeeksempler/Fra15til13lag](https://github.com/DAF-kodeeksempler/Fra15til13lag))
 findes eksempler for Leaflet og Openlayers.
 
-I de følgende eksempler vises hvordan det inderste zoomlag kan udskiftes med WMS services, i stedet for WMTS.
+I de følgende eksempler vises hvordan det inderste zoom dybder kan udskiftes med WMS services, i stedet for WMTS.
 
 Ekstra omskrevne eksempler fra kortforsyningen til Datafordeler findes her: ([https://github.com/DAF-kodeeksempler/Demo](https://github.com/DAF-kodeeksempler/Demo))
 
