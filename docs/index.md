@@ -1,4 +1,4 @@
-# Ændring af mængden af zoom dybder på kortservices
+# Ændring af mængden af zoom dybder på WMTS kortservices
 Den <span style="color:red">xxxxx</span> skifter 6 WMTS services på Datafordeleren over til 13 zoom dybder, i stedet for 15.
 
 Følgende services skifter fra 15 til 13 zoom dybder:
@@ -24,36 +24,30 @@ Zoom dybdernes dimensioner: (Læg mærke til 14 og 15, som fjernes)
 | TileMatrix | MatrixHeight | MatrixWidth | PixelSize: meter/pixel | Bredde i meter for 256-tile |
 | --- | --- | --- | --- | --- |
 | 0 (L00) | 2 | 3 | 1.638,4 | 419.430,4 |
-| 1 (L01) | 4 | 6 | 819,20 | 209.715,2 |
-| 2 (L02) | 8 | 12 | 409,60 | 104.857,6 |
-| 3 (L03) | 16 | 24 | 204,80 | 52.428,8 |
-| 4 (L04) | 32 | 48 | 102,40 | 26.214,4 |
-| 5 (L05) | 64 | 96 | 51,20 | 13.107,2 |
-| 6 (L06) | 128 | 192 | 25,60 | 6.553,6 |
-| 7 (L07) | 256 | 384 | 12,80 | 3.276,8 |
-| 8 (L08) | 512 | 768 | 6,40 | 1.638,4 |
-| 9 (L09) | 1.024 | 1.536 | 3,20 | 819,2 |
-| 10 (L10) | 2.048 | 3.072 | 1,60 | 409,6 |
-| 11 (L11) | 4.096 | 6.144 | 0,80 | 204,8 |
+| 1 (L01) | 4 | 6 | 819,2 | 209.715,2 |
+| 2 (L02) | 8 | 12 | 409,6 | 104.857,6 |
+| 3 (L03) | 16 | 24 | 204,8 | 52.428,8 |
+| 4 (L04) | 32 | 48 | 102,4 | 26.214,4 |
+| 5 (L05) | 64 | 96 | 51,2 | 13.107,2 |
+| 6 (L06) | 128 | 192 | 25,6 | 6.553,6 |
+| 7 (L07) | 256 | 384 | 12,8 | 3.276,8 |
+| 8 (L08) | 512 | 768 | 6,4 | 1.638,4 |
+| 9 (L09) | 1.024 | 1.536 | 3,2 | 819,2 |
+| 10 (L10) | 2.048 | 3.072 | 1,6 | 409,6 |
+| 11 (L11) | 4.096 | 6.144 | 0,8 | 204,8 |
 | 12 (L12) | 8.192 | 12.288 | 0,4 | 102,4 |
 | 13 (L13) | 16.384 | 24.576 | 0,2 | 51,2 |
-| <span style="color:red">14 (L14)</span> | 32.768 | 49.152 | 0,1 | 25.6 |
-| <span style="color:red">15 (L15)</span> | 65.536 | 98.304 | 0,05 | 12.8 |
+| <span style="color:red">14 (L14)</span> | <span style="color:red">32.768</span> | <span style="color:red">49.152</span> | <span style="color:red">0,1</span> | <span style="color:red">25.6</span> |
+| <span style="color:red">15 (L15)</span> | <span style="color:red">65.536</span> | <span style="color:red">98.304</span> | <span style="color:red">0,05</span> | <span style="color:red">12.8</span> |
 
-## Eksempler
+## Løsningsmuligheder
+Skift til WMS services ved de inderste zoom dybder.
+
 I dette github repository ([https://github.com/DAF-kodeeksempler/Fra15til13lag](https://github.com/DAF-kodeeksempler/Fra15til13lag))
-findes eksempler for Leaflet og Openlayers.
+findes eksempler for Leaflet og Openlayers, der viser hvordan de inderste zoom dybder kan udskiftes med WMS services, i stedet for WMTS.
 
-I de følgende eksempler vises hvordan det inderste zoom dybder kan udskiftes med WMS services, i stedet for WMTS.
+<span style="text-decoration: underline">Leaflet Kodeeksempel</span>: [eksempel](/examples/leaflet/example_wms_zoom.html)
+
+<span style="text-decoration: underline">Openlayers Kodeeksempel</span>: [eksempel](/examples/openlayers/example_wms_zoom.html)
 
 Ekstra omskrevne eksempler fra kortforsyningen til Datafordeler findes her: ([https://github.com/DAF-kodeeksempler/Demo](https://github.com/DAF-kodeeksempler/Demo))
-
-
-### Leaflet
-
-<span style="text-decoration: underline">Kodeeksempel</span>: [eksempel](/examples/leaflet/example_wms_zoom.html)
-
-### Openlayers
-
-<span style="text-decoration: underline">Kodeeksempel</span>: [eksempel](/examples/openlayers/example_wms_zoom.html)
-
