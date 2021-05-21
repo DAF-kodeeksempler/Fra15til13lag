@@ -37,8 +37,8 @@ Zoom niveauernes dimensioner: (Læg mærke til 14 og 15, som bliver fjernet)
 | 11 | 4.096 | 6.144 | 0,8 | 204,8 |
 | 12 | 8.192 | 12.288 | 0,4 | 102,4 |
 | 13 | 16.384 | 24.576 | 0,2 | 51,2 |
-| <span style="color:red">14</span> | <span style="color:red">32.768</span> | <span style="color:red">49.152</span> | <span style="color:red">0,1</span> | <span style="color:red">25.6</span> |
-| <span style="color:red">15</span> | <span style="color:red">65.536</span> | <span style="color:red">98.304</span> | <span style="color:red">0,05</span> | <span style="color:red">12.8</span> |
+| <span style="color:red">14</span> | <span style="color:red">32.768</span> | <span style="color:red">49.152</span> | <span style="color:red">0,1</span> | <span style="color:red">25,6</span> |
+| <span style="color:red">15</span> | <span style="color:red">65.536</span> | <span style="color:red">98.304</span> | <span style="color:red">0,05</span> | <span style="color:red">12,8</span> |
 
 ## Løsningsmuligheder
 Skift til WMS services ved de inderste zoom niveauer.
