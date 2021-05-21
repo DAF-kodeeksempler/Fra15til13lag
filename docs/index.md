@@ -16,7 +16,7 @@ Følgende services skifter fra 15 til 13 lag:
 De inderste 2 lag tilføjer ikke mere information, og er opskalerede versioner af lag 13. De fjernes derfor for at spare diskplads og tid når cachen opdateres.
 
 ## Hvordan påvirker det mig?
-Hvis du har opsat WMTS i din applikation, hvor alle zoomdybder bruges, skal du fjerne de inderste 2 dybder.
+Hvis du har opsat WMTS i din webgis applikation, hvor alle zoom dybder bruges, skal du fjerne de inderste 2 dybder.
 
 Lagenes dimensioner: (Læg mærke til 14 og 15, som fjernes)
 
@@ -50,7 +50,6 @@ Ekstra omskrevne eksempler fra kortforsyningen til Datafordeler findes her: ([ht
 
 
 ### Leaflet
-
 
 <span style="text-decoration: underline">Kodeeksempel</span>: [eksempel](/examples/leaflet/example_wms_zoom.html)
 
