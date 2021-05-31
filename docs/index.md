@@ -1,5 +1,9 @@
 # Ændret antal zoom niveauer på WMTS
-Den 22/6 skifter 6 WMTS på Datafordeleren over til 13 zoom niveauer, i stedet for 15.
+6 WMTS services på Datafordeleren skifter over til 13 zoom niveauer, i stedet for 15.
+
+Ændringen sker under release 31, ultimo august.
+
+Følg med på [Datafordeler nyheder](https://datafordeler.dk/artikler/nyheder/) eller [Datafordeler releases](https://datafordeler.dk/drift/releases) for opdateringer.
 
 Følgende services skifter fra 15 til 13 zoom niveauer:
 
