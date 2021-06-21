@@ -1,7 +1,9 @@
 # Ændret antal zoom niveauer på WMTS
 ## Indhold
+* TOC
 {:toc}
 
+# Hvad ændres?
 6 WMTS services på Datafordeleren skifter over til 13 zoom niveauer, i stedet for 15.
 
 Ændringen sker under release 31, ultimo august.
