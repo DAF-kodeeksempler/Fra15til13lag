@@ -36,7 +36,7 @@
         })
         .then(function (text) {
             var result = parserGetCap.read(text);
-            console.log(result)
+            console.log({ 'text': 'prod', 'data': result })
 
             // Set the attribution (the copyright statement shown in the lower right corner)
             // We do this as we want the same attributions for all layers
@@ -97,7 +97,7 @@
         })
         .then(function (text) {
             var result = parserGetCapTest.read(text);
-            console.log(result)
+            console.log({ 'text': 'test04', 'data': result })
 
             // Set the attribution (the copyright statement shown in the lower right corner)
             // We do this as we want the same attributions for all layers
