@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://openlayers.org/en/v6.4.3/css/ol.css" type="text/css">
+  <link rel="stylesheet" href="lib/ol-layerswitcher.css" type="text/css">
+  <style>
+    .map {
+      height: 800px;
+      width: 100%;
+    }
+
+    .ol-attribution a {
+      color: #333333;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      font-size: .7rem;
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid black;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td {
+      text-align: center;
+      width: 33%;
+    }
+  </style>
+  <script src="https://openlayers.org/en/v6.5.0/build/ol.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.2/proj4-src.js" type="text/javascript"></script>
+  <script src="lib/ol-layerswitcher.js" type="text/javascript"></script>
+  <title>OpenLayers Switch zoom</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>
+        <h2>GetCapabiltiy map</h2>
+        <p>Uses a GetCapabiltiy call to get layer information</p>
+        <p>When the change happens, it will only use the 13 layers</p>
+      </th>
+      <th>
+        <h2>GetCapabiltiy map on test04</h2>
+        <p>Uses a GetCapabiltiy call to get layer information</p>
+        <p>This service already uses 13 layers, notice the missing layers at the innermost zoom levels. For
+          illustrations sake, we force it to gather 13 layers</p>
+      </th>
+      <th>
+        <h2>Static map</h2>
+        <p>Zooms down to layer 15.</p>
+        <p>This map will not work after the change</p>
+      </th>
+
+    </tr>
+    <tr>
+      <td>
+        <div id="mapGetCap" class="map"></div>
+      </td>
+      <td>
+        <div id="mapGetCapTest" class="map"></div>
+      </td>
+      <td>
+        <div id="mapStatic" class="map"></div>
+      </td>
+
+    </tr>
+  </table>
+  <script src="example_getCapabilities.js" type="text/javascript"></script>
+</body>
+
+</html>

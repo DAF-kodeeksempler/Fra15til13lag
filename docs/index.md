@@ -76,3 +76,8 @@ finder du eksempler for Leaflet og Openlayers, der viser hvordan de inderste zoo
 
 ### Openlayers eksempel
 <span style="text-decoration: underline">Openlayers Kodeeksempel</span>: [eksempel](/examples/openlayers/example_wms_zoom.html)
+
+## Jeg vil gerne automatisk finde zoom niveauer ud fra GetCapability kald
+
+### Openlayers eksempel
+<span style="text-decoration: underline">Openlayers Kodeeksempel</span>: [eksempel](/examples/openlayers/example_getCapabilities.html)
