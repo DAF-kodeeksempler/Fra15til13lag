@@ -1,12 +1,12 @@
-# Ændret antal zoom niveauer på WMTS
-## Indhold
 * TOC
 {:toc}
 
 # Hvad ændres?
 6 WMTS services på Datafordeleren skifter over til 13 zoom niveauer, i stedet for 15.
 
-Ændringen sker under release 31, ultimo august.
+Ændringen sker under release 31, den 31 august.
+
+Du kan teste ændringen på test04. Se mere under sektionen "Hvor kan jeg teste det?"
 
 Følg med på [Datafordeler nyheder](https://datafordeler.dk/artikler/nyheder/) eller [Datafordeler releases](https://datafordeler.dk/drift/releases) for opdateringer.
 
@@ -19,14 +19,19 @@ Følgende services skifter fra 15 til 13 zoom niveauer:
 * topo_skaermkort_daempet
 * topo_skaermkort_graa
 
-## Hvorfor?
-
+# Hvorfor?
 De inderste 2 zoom niveauer tilføjer ikke mere information og er opskalerede versioner af zoom niveau 13. De bliver fjernet for at spare diskplads og tid, når cachen bliver opdateret.
 
-## Hvordan påvirker det mig?
-Hvis du har opsat WMTS i din webgis applikation, hvor alle zoom niveauer bliver brugt, skal du fjerne de inderste 2 niveauer.
+# Hvordan påvirker det mig?
+Brugere af standalone gis applikationer som ArcGis, QGis eller lign. bliver ikke påvirket af ændringen, og kan bruge services som normalt.
 
-Bemærk at du kan bruge WMS som supplement for zoom niveau 14 og 15. Se link til eksempel længere nede.
+Hvis du har opsat din webgis applikation til automatisk at tage zoom niveau information fra GetCapability kaldet, bliver du ikke påvirket af ændringen.
+
+Hvis du har opsat din webgis applikation, hvor alle zoom niveauer bliver brugt, skal du fjerne de inderste 2 niveauer.
+
+Bemærk at du kan bruge WMS som supplement for zoom niveau 14 og 15. Se hvordan under "Eksempler" længere nede.
+
+Bemærk også, at tjenester fra Kortforsyningen bruger 13 zoom niveauer.
 
 Zoom niveauernes dimensioner: (Læg mærke til 14 og 15, som bliver fjernet)
 
@@ -49,12 +54,24 @@ Zoom niveauernes dimensioner: (Læg mærke til 14 og 15, som bliver fjernet)
 | <span style="color:red">14</span> | <span style="color:red">32.768</span> | <span style="color:red">49.152</span> | <span style="color:red">0,1</span> | <span style="color:red">25,6</span> |
 | <span style="color:red">15</span> | <span style="color:red">65.536</span> | <span style="color:red">98.304</span> | <span style="color:red">0,05</span> | <span style="color:red">12,8</span> |
 
-## Løsningsmuligheder
+# Hvor kan jeg teste det?
+Ændringerne er implementeret på Datafordelerens test04 miljø.
+
+For eksempel, kan du tilgå topo_skaermkort_wmts via:
+```
+https://test04-services.datafordeler.dk/DKskaermkort/topo_skaermkort_wmts/1.0.0/WMTS
+```
+
+# Eksempler
+
+## Jeg vil gerne bruge WMS services som udskiftning for de inderste 2 lag
 Skift til WMS services ved de inderste zoom niveauer.
 
 I dette github repository ([https://github.com/DAF-kodeeksempler/Fra15til13zoom](https://github.com/DAF-kodeeksempler/Fra15til13zoom))
 finder du eksempler for Leaflet og Openlayers, der viser hvordan de inderste zoom niveauer kan udskiftes med WMS services i stedet for WMTS.
 
+### Leaflet eksempel
 <span style="text-decoration: underline">Leaflet Kodeeksempel</span>: [eksempel](/examples/leaflet/example_wms_zoom.html)
 
+### Openlayers eksempel
 <span style="text-decoration: underline">Openlayers Kodeeksempel</span>: [eksempel](/examples/openlayers/example_wms_zoom.html)
