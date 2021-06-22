@@ -57,10 +57,11 @@ Zoom niveauernes dimensioner: (Læg mærke til 14 og 15, som bliver fjernet)
 # Hvor kan jeg teste det?
 Ændringerne er implementeret på Datafordelerens test04 miljø.
 
-For eksempel, kan du tilgå topo_skaermkort_wmts via:
+Du kan for eksempel tilgå topo_skaermkort_wmts via:
 ```
 https://test04-services.datafordeler.dk/DKskaermkort/topo_skaermkort_wmts/1.0.0/WMTS
 ```
+Husk at opret en webbruger og tjenstebruger med password på test04 test04-selfservice.datafordeler.dk
 
 # Eksempler
 
