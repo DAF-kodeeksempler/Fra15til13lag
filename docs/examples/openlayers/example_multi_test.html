@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://openlayers.org/en/v6.4.3/css/ol.css" type="text/css">
+  <link rel="stylesheet" href="lib/ol-layerswitcher.css" type="text/css">
+  <style>
+    .map {
+      height: 400px;
+      width: 100%;
+    }
+
+    .ol-attribution a {
+      color: #333333;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      font-size: .7rem;
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid black;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td {
+      text-align: center;
+      width: 33%;
+    }
+  </style>
+  <script src="https://openlayers.org/en/v6.5.0/build/ol.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.2/proj4-src.js" type="text/javascript"></script>
+  <script src="lib/ol-layerswitcher.js" type="text/javascript"></script>
+  <title>OpenLayers Switch zoom</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <p>topo_skaermkort_wmts</p>
+      </td>
+      <td>
+        <p>topo_skaermkort_daempet</p>
+      </td>
+      <td>
+        <p>topo_skaermkort_graa</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="topo_skaermkort_wmts" class="map"></div>
+      </td>
+      <td>
+        <div id="topo_skaermkort_daempet" class="map"></div>
+      </td>
+      <td>
+        <div id="topo_skaermkort_graa" class="map"></div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p>dhm_terraen_skyggekort</p>
+      </td>
+      <td>
+        <p>dhm_overflade_skyggekort</p>
+      </td>
+      <td>
+        <p>dhm_historik_hillshade</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="dhm_terraen_skyggekort" class="map"></div>
+      </td>
+      <td>
+        <div id="dhm_overflade_skyggekort" class="map"></div>
+      </td>
+      <td>
+        <div id="dhm_historik_hillshade" class="map"></div>
+      </td>
+    </tr>
+  </table>
+  <script src="example_multi_test.js" type="text/javascript"></script>
+</body>
+
+</html>
